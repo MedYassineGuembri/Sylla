@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "font-1";
+    src: url(./assets/fonts/IBMPlexSans-Light.ttf);
+  }
+  @font-face {
+    font-family: "font-2";
+    src: url(./assets/fonts/IBMPlexSans-Regular.ttf);
+  }
+  @font-face {
+    font-family: "font-3";
+    src: url(./assets/fonts/IBMPlexSans-Bold.ttf);
+  }
+  
+  $font-1: "font-1", sans-serif;
+  $font-2: "font-2", serif;
+  $font-3: "font-3", serif;
+
+  h1 {
+      font-family: $font-3 ;
+  }
+
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  body{
+  
+}
