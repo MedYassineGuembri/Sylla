@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "font-1";
+  src: url(./assets/fonts/IBMPlexSans-Light.ttf);
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url(./assets/fonts/IBMPlexSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "font-3";
+  src: url(./assets/fonts/IBMPlexSans-Bold.ttf);
+}
+
+h1 {
+  font-family: "font-3", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #533096;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar a {
+  color: #e8e8e8;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "font-2", serif;
+  margin: 10px;
+}
+
+.navbar .links {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=Navbar.css.map */

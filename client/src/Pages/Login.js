@@ -1,18 +1,14 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
+import Log from '../components/Log';
 
 const Login = () => {
     return (
-        <div className="login">
-          <Navigation />
-           <body>
-            <form>
-                <h1>Administrateur Estiam</h1>
-                <input type="text" placeholder="Email"/>
-                <input type="text" placeholder="Password"/>
-                <input type="submit" placeholder="log-in"/>
-            </form>
-            </body> 
+        <div className="login-page">
+          <div className="Log-container">
+              <Navigation />
+              <Log />
+            </div>
         </div>
     );
 };
