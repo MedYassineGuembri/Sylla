@@ -1,5 +1,5 @@
-import React from 'react';
-import Routes from './components/routes';
+import React from "react";
+import Routes from "./components/routes";
 
 const App = () => {
   return (
@@ -8,5 +8,4 @@ const App = () => {
     </div>
   );
 };
-
 export default App;
