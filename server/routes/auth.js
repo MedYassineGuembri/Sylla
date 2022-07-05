@@ -2,6 +2,7 @@ const router = require("express").Router();
 const { User } = require("../models/user");
 const bcrypt = require("bcrypt");
 const Joi = require("joi");
+const maxAge = 3 * 24 * 60 * 60 * 1000;
 
 router.post("/", async (req, res) => {
   try {
@@ -21,7 +22,8 @@ router.post("/", async (req, res) => {
       return res.status(401).send({ message: "Invalid Email or Password" });
 
     const token = user.generateAuthToken();
-    res.status(200).send({ data: token, message: "logged in successfully" });
+    res.cookie("jwt", token, { httpOnly: true, maxAge });
+    res.status(200).json({ data: token, message: "logged in successfully" });
   } catch (error) {
     res.status(500).send({ message: "Internal Server Error" });
   }

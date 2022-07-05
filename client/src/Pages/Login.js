@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import Navigation from "../components/Navigation";
 import "../styles/Navbar.css";
-import "../styles/logstyle.css";
+import "../styles/Logstyle.css";
 
 const Login = () => {
   const [data, setData] = useState({ email: "", password: "" });
