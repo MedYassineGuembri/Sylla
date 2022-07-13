@@ -1,1 +1,24 @@
-/* No CSS *//*# sourceMappingURL=Variables.css.map */
+@font-face {
+  font-family: "font-1";
+  src: url(./assets/fonts/IBMPlexSans-Light.ttf);
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url(./assets/fonts/IBMPlexSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "font-3";
+  src: url(./assets/fonts/IBMPlexSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "font-4";
+  src: url(./assets/fonts/IBMPlexSansCondensed-Medium.ttf)
+}
+
+@font-face {
+  font-family: "font-5";
+  src: url(./assets/fonts/IBMPlexSansCondensed-Light.ttf)
+}

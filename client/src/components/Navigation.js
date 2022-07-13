@@ -10,22 +10,27 @@ const handleLogout = () => {
 
 const Navigation = () => {
   return (
-    <div className="navbar">
-      <img src="/img/icons/icon.jpg" width="50" height="50"></img>
-      <div className="links">
-        <NavLink excat to="/" activeClassName="nav-active">
-          Acceuil
-        </NavLink>
-        <NavLink excat to="/recherche" activeClassName="nav-active">
-          Recherche
-        </NavLink>
-        <NavLink excat to="/cours" activeClassName="nav-active">
-          Cours
-        </NavLink>
+    <div className="x-bar">
+      <div className="x-bar-content">
+        <div className="x-bar-container-logo">
+          <img src="/img/logo_estiam_blanc.png" width="150" height="29"></img>
+        </div>
+        <div className="links">
+          <NavLink excat to="/" activeClassName="nav-active">
+            <span className="x-text">Acceuil</span>
+          </NavLink>
+          <NavLink excat to="/recherche" activeClassName="nav-active">
+            <span className="x-text">Recherche</span>
+          </NavLink>
+          <NavLink excat to="/cours" activeClassName="nav-active">
+            <span className="x-text">Cours</span>
+          </NavLink>
+        </div>
+        <img src="/img/happy-at-school.png" width="150" height="75"></img>
       </div>
       <button className="white_btn" onClick={handleLogout}>
         <img src="./img/icons/logout.svg" width="20" height="20" />
-        Logout
+        Se déconnecter
       </button>
     </div>
   );
